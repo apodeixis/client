@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.auth-background {
+  background-color: #272a32e0;
+}
+
+.section-bg-color {
+  background-color: #272a32e0;
+}
+
+.simple-text-color-1 {
+  color: rgb(219, 219, 219);
+}
+
+.highlighted-border-color-1 {
+  border-color: rgb(253 224 71);
+}
+
+.highlighted-text-color-1 {
+  color: #1eb530;
+}
+
+.main-post-bg-color {
+  background-color: rgb(55 65 81);
+}
+
+.post-heading-color {
+  color:rgb(52, 194, 237);
+}
