@@ -1,5 +1,5 @@
 configVersion: 1
-project: "vue.js-client"
+project: "vue-client"
 ---
 image: builder
 from: node:21.5-alpine3.18
