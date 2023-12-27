@@ -40,6 +40,7 @@ export default {
             this.disabled = true
             const payload = JSON.stringify({
                 data: {
+                    type: "recover-password-email",
                     attributes: {
                         email: this.email
                     }

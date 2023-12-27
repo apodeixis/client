@@ -92,7 +92,7 @@ export default {
         return
       }
 
-      const requestPayload = JSON.stringify({ data: { attributes: { title: this.postData.title, body: this.postData.text } } })
+      const requestPayload = JSON.stringify({ data: { type: "create-post", attributes: { title: this.postData.title, body: this.postData.text } } })
 
       axiosClient.post("/posts", requestPayload)
         .then(response => {

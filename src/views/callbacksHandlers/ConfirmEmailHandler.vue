@@ -18,6 +18,7 @@ export default {
   mounted() {
     const payload = {
       data: {
+        type: "sign-up-callback",
         attributes: {
           token: this.$route.query.token
         }

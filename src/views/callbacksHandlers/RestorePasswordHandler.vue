@@ -24,6 +24,7 @@ export default {
         handleNewPassword(newPassword) {
             const payload = JSON.stringify({
                 data: {
+                    type: "recover-password",
                     attributes: {
                         token: this.token,
                         new_password: newPassword

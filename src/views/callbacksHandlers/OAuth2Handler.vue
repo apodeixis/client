@@ -18,6 +18,7 @@ export default {
   mounted() {
     const payload = {
       data: {
+        type: "oauth2-google-callback",
         attributes: {
           code: this.$route.query.code,
           state: this.$route.query.state

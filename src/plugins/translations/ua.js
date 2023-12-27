@@ -48,7 +48,7 @@ export default {
     A_NewName: 'Нове ім\'я',
     A_Update: 'Обновити',
     A_Language: 'Мова',
-    A_ForgotPasswordYouCanResotoreIt: 'Забули пароль? Ви можете відновити його ',
+    A_ForgotPasswordYouCanRestoreIt: 'Забули пароль? Ви можете відновити його ',
     A_Here: 'тут',
     A_PasswordRecovery: 'Відновлення пароля',
     A_PleaseCheckYourMailToContinue: 'Будь ласка перевірте свою пошту щоб продовжити',

@@ -41,6 +41,7 @@ export default {
 
             const payload = {
                 data: {
+                    type: "edit-user",
                     attributes: {
                         new_name: this.newName
                     }

@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="flex justify-center w-full">
-      <div class="mt-2 text-white w-f">{{ $t('A_ForgotPasswordYouCanResotoreIt') }}<router-link
+      <div class="mt-2 text-white w-f">{{ $t('A_ForgotPasswordYouCanRestoreIt') }}<router-link
           :to="{ name: 'RestorePassword' }" class="text-sky-400 hover:text-sky-700">{{ $t('A_Here') }}</router-link>
       </div>
     </div>
@@ -80,7 +80,7 @@ export default {
         this.showError("Enter correctly all fields")
         return
       }
-      const payload = JSON.stringify({ data: { attributes: { email: this.email_str, password: this.password_str } } })
+      const payload = JSON.stringify({ data: { type: "login-user", attributes: { email: this.email_str, password: this.password_str } } })
       axiosClient.post('/auth/login', payload, {
         withCredentials: true
       })

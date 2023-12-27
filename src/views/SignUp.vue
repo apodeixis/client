@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="flex justify-center w-full">
-      <div class="mt-2 text-white w-f">{{ $t('A_ForgotPasswordYouCanResotoreIt') }}<router-link
+      <div class="mt-2 text-white w-f">{{ $t('A_ForgotPasswordYouCanRestoreIt') }}<router-link
           :to="{ name: 'RestorePassword' }" class="text-sky-400 hover:text-sky-700">{{ $t('A_Here') }}</router-link>
       </div>
     </div>
@@ -89,6 +89,7 @@ export default
         const payload = JSON.stringify({
           data:
           {
+            type: "sign-up-user",
             attributes:
             {
               email: this.email_str,
@@ -99,7 +100,7 @@ export default
         })
 
         axiosClient.post('/auth/sign-up', payload)
-          .then(resposne => {
+          .then(response => {
             this.$refs.popup.show()
           })
           .catch(error => {
